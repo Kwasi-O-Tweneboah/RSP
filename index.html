@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Scissors Paper Project</title>
+</head>
+<body>
+    <script>
+        let choices = ['rock', 'scissors', 'paper']; // global array with choices for players
+        function getComputerChoices(choices) {  // declared function with choices array to be used by pc as choices to play in the game
+            return choices[Math.floor(Math.random() * choices.length)]; // code that lets the pc randomly selects from the list of choices in each iteration
+        }
+        console.log(getComputerChoices(choices));
+    </script>
+</body>
+</html>
