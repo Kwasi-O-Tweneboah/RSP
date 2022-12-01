@@ -8,11 +8,19 @@
 </head>
 <body>
     <script>
-        let choices = ['rock', 'scissors', 'paper']; // global array with choices for players
-        function getComputerChoices(choices) {  // declared function with choices array to be used by pc as choices to play in the game
+        let playerSelection = prompt('Enter your choice to play', 'rock, scissors or paper');
+
+        const choices = ['rock', 'scissors', 'paper']; // global array with choices for players
+
+        const computerSelection = (choices) => {  // declared function with choices array to be used by pc as choices to play in the game
             return choices[Math.floor(Math.random() * choices.length)]; // code that lets the pc randomly selects from the list of choices in each iteration
         }
-        console.log(getComputerChoices(choices));
+        //console.log(computerSelection);
+
+        function playRound(playerSelection, computerSelection) {
+            return playerSelection, computerSelection;
+        }
+        console.log(playRound(playerSelection, computerSelection));
     </script>
 </body>
 </html>
